@@ -13,5 +13,10 @@ namespace HADS_IBER_EVAR
         {
 
         }
+
+        protected void rbtnProfesor_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
