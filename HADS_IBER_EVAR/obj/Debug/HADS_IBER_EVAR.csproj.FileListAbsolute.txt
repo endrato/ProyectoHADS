@@ -52,8 +52,12 @@ C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\roslyn\VBCSCompiler.
 C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\obj\Debug\HADS_IBER_EVAR.csprojAssemblyReference.cache
 C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\obj\Debug\HADS_IBER_EVAR.csproj.CoreCompileInputs.cache
 C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\obj\Debug\HADS_IBER_EVAR.csproj.CopyComplete
 C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\obj\Debug\HADS_IBER_EVAR.dll
 C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\obj\Debug\HADS_IBER_EVAR.pdb
+C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\obj\Debug\HADS_IBER_EVAR.csprojAssemblyReference.cache
+C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\Lab3.dll
+C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\System.Data.SqlClient.dll
+C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\Lab3.pdb
+C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\System.Data.SqlClient.xml

@@ -24,6 +24,15 @@ namespace HADS_IBER_EVAR
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Control Label7.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label7;
+
+        /// <summary>
         /// Control Label1.
         /// </summary>
         /// <remarks>
@@ -168,22 +177,22 @@ namespace HADS_IBER_EVAR
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// Control RadioButton1.
+        /// Control rbtnProf.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton1;
+        protected global::System.Web.UI.WebControls.RadioButton rbtnProf;
 
         /// <summary>
-        /// Control RadioButton2.
+        /// Control rbtnAlum.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton2;
+        protected global::System.Web.UI.WebControls.RadioButton rbtnAlum;
 
         /// <summary>
         /// Control btnRegistrarse.

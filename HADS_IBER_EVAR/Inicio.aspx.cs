@@ -13,5 +13,18 @@ namespace HADS_IBER_EVAR
         {
 
         }
+        
+        protected void tbPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (Lab3.DataAccess.iniciarSesion(tbEmail.Text, tbPassword.Text)) {
+                Server.Transfer("Principal.aspx");
+                Console.WriteLine("Login correcto");
+            }
+        }
     }
 }
