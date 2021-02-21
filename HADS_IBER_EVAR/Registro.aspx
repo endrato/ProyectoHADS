@@ -55,7 +55,7 @@
                     <asp:Label ID="Label4" runat="server" Text="Password"></asp:Label>
                 </th>
                 <th class="auto-style1">
-                    <asp:TextBox ID="tbPassword" runat="server" Height="22px"></asp:TextBox>
+                    <asp:TextBox ID="tbPassword" runat="server" Height="22px" TextMode="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvPass" runat="server" ControlToValidate="tbPassword" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                 </th>
             </tr>
@@ -64,7 +64,7 @@
                     <asp:Label ID="Label5" runat="server" Text="Repetir Password"></asp:Label>
                 </th>
                 <th class="auto-style3">
-                    <asp:TextBox ID="tbRepPassword" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="tbRepPassword" runat="server" TextMode="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvRePass" runat="server" ControlToValidate="tbRepPassword" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                 </th>
             </tr>
@@ -74,8 +74,8 @@
                 </th>
                 <th class="auto-style1">
                     <p>
-            <asp:RadioButton ID="rbtnProf" runat="server" GroupName="rol" OnCheckedChanged="rbtnProfesor_CheckedChanged" Text="Profesor" />
-            <asp:RadioButton ID="rbtnAlum" runat="server" GroupName="rol" OnCheckedChanged="rbtnProfesor_CheckedChanged" Text="Alumno" Checked="True" />
+            <asp:RadioButton ID="rbtnProf" runat="server" GroupName="rol" Text="Profesor" />
+            <asp:RadioButton ID="rbtnAlum" runat="server" GroupName="rol" Text="Alumno" Checked="True" />
         </p>
                 </th>
             </tr>
@@ -84,6 +84,7 @@
         
         <p>
             <asp:Button ID="btnRegistrarse" runat="server" Text="Registrarse" OnClick="btnRegistrarse_Click" />
+            <asp:Label ID="lblRegistrado" runat="server"></asp:Label>
         </p>
         <p>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tbEmail" ErrorMessage="Introduce un email válido" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red"></asp:RegularExpressionValidator>

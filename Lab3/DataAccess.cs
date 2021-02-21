@@ -24,15 +24,23 @@ namespace Lab3
                 command.Parameters.Add("@tipo", SqlDbType.NVarChar, 30).Value = tipo;
                 command.Parameters.Add("@pass", SqlDbType.NVarChar, 30).Value = pass;
                 command.Connection.Open();
-                command.ExecuteNonQuery();
+                try
+                {
+                    command.ExecuteNonQuery();
+                }
+                catch (Exception e) {
+                    Console.Write(e.StackTrace);
+                    Console.Write("Ya existe usuario con ese email");
+                }
+                
                 
             }
-
 
         }
         public static Boolean iniciarSesion(String emilio, String pass)
         {
-            string queryString = "SELECT email from dbo.Usuarios WHERE (email = @email AND pass = @pass)";
+            string queryString = "SELECT email from dbo.Usuarios WHERE (email = @email AND pass = @pass AND confirmado = 'True')";
+           
             using (SqlConnection connection = new SqlConnection(
                        connectionString))
             {
@@ -44,9 +52,11 @@ namespace Lab3
                 try
                 {
                     String e = (string)command.ExecuteScalar();
+                    command.Connection.Close();
                     if (e == emilio)
                     {
                         return true;
+                       
                     }
                 }
                 catch (Exception ex)
@@ -81,7 +91,7 @@ namespace Lab3
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
                 command.Parameters.Add("@email", SqlDbType.NVarChar, 30).Value = emilio;
-                command.Parameters.Add("@codpass", SqlDbType.NVarChar, 30).Value = codpass;
+                command.Parameters.Add("@codpass", SqlDbType.Int, 32).Value = Convert.ToInt32(codpass);
                 command.Connection.Open();
 
                 try
@@ -102,19 +112,64 @@ namespace Lab3
             }
 
         }
-
-        public static void modificarContraseña(String emilio, String newPass) {
+        public static Boolean modificarContraseña(String emilio, String newPass) {
             string queryString = "UPDATE dbo.Usuarios SET pass = @pass WHERE email = @emilio";
             using (SqlConnection connection = new SqlConnection(
                        connectionString))
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
-                command.Parameters.Add("@pass", SqlDbType.Int, 30).Value = newPass;
+                command.Parameters.Add("@pass", SqlDbType.NVarChar, 30).Value = newPass;
                 command.Parameters.Add("@emilio", SqlDbType.NVarChar, 30).Value = emilio;
                 command.Connection.Open();
-                command.ExecuteNonQuery();
-                command.Connection.Close();
+                try {
+                    command.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception e) {
+                    Console.WriteLine(e.Message);
+                    return false;
+                }
+                
+                //command.Connection.Close();
             }
+        }
+        public static Boolean confirmarUsuario(String emilio, int numConfir)
+        {
+            string queryString1 = "SELECT numconfir from dbo.Usuarios WHERE email = @emilio";
+            string queryString2 = "UPDATE dbo.Usuarios SET confirmado = 'true' WHERE email = @emilio";
+            using (SqlConnection connection = new SqlConnection(
+                       connectionString))
+            {
+                SqlCommand select = new SqlCommand(queryString1, connection);
+                select.Parameters.Add("@emilio", SqlDbType.NVarChar, 30).Value = emilio;
+                select.Connection.Open();
+                int numConfirBD = (int)select.ExecuteScalar();
+                select.Connection.Close();
+
+                if (numConfirBD == numConfir)
+                {
+                    SqlCommand update = new SqlCommand(queryString2, connection);
+                    update.Parameters.Add("@emilio", SqlDbType.NVarChar, 30).Value = emilio;
+                    update.Connection.Open();
+                    try
+                    {
+                        update.ExecuteNonQuery();
+                        update.Connection.Close();
+                        return true;
+                    }
+                    catch(Exception e)
+                    {
+                        Console.WriteLine(e.StackTrace);
+                        return false;
+                    }
+
+                }
+                else {
+                    Console.WriteLine("Número de confirmación no coincide con el de la BD");
+                    return false;
+                }
+            }
+
         }
     }
 

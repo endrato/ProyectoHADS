@@ -61,3 +61,10 @@ C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\Lab3.dll
 C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\System.Data.SqlClient.dll
 C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\Lab3.pdb
 C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\System.Data.SqlClient.xml
+C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\Microsoft.Web.Administration.dll
+C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\Microsoft.Win32.Registry.dll
+C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\System.Reflection.TypeExtensions.dll
+C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\System.Security.Principal.Windows.dll
+C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\System.ServiceProcess.ServiceController.dll
+C:\Users\innib\source\repos\ProyectoHADS\HADS_IBER_EVAR\bin\System.Diagnostics.DiagnosticSource.xml

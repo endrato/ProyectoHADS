@@ -5,17 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net.Mail;
+using Microsoft.Web.Administration;
 
 namespace HADS_IBER_EVAR
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void rbtnProfesor_CheckedChanged(object sender, EventArgs e)
         {
 
         }
@@ -31,20 +27,33 @@ namespace HADS_IBER_EVAR
             Lab3.DataAccess.registrarUsuario(tbEmail.Text, tbNombre.Text, tbApellidos.Text, numConfir, false, tipo, tbPassword.Text);
             try
             {
-                MailMessage mail = new MailMessage();
-                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+                var fromAddress = new MailAddress("hads21.19@gmail.com", "HADS21 - Grupo 19");
+                var toAddress = new MailAddress(tbEmail.Text, "Welcome");
+               
+                const string subject = "Confirmar tu cuenta";
+                string enlace = Convert.ToString("https://localhost:44378/Confirmar.aspx?emilio="+ tbEmail.Text+"&numConfir="+numConfir);
+                string body = "Clica el siguiente link para confirmar tu cuenta:\n" + enlace;
 
-                mail.From = new MailAddress("hads21.19@gmail.com");
-                mail.To.Add(tbEmail.Text);
-                mail.Subject = "Confirmar cuenta";
-                mail.Body = String.Concat("Haz clic aqui para confirmar tu cuenta : http://localhost/PracticaHAS/confirmar.aspx?mbr=pepe@pepe.pepe&numconf=9715284 ");
-
-                SmtpServer.Port = 587;
-                SmtpServer.Credentials = new System.Net.NetworkCredential("hads21.19", "deLOCOS!!!");
-                SmtpServer.EnableSsl = true;
-
-                SmtpServer.Send(mail);
-                //MessageBox.Show("mail Send");
+             var smtp = new SmtpClient
+                {
+                    Host = "smtp.gmail.com",
+                    Port = 587,
+                    EnableSsl = true,
+                    DeliveryMethod = SmtpDeliveryMethod.Network,
+                    Credentials = new System.Net.NetworkCredential("hads21.19", "deLOCOS!!!"),
+                    Timeout = 20000
+                };
+                using (var message = new MailMessage(fromAddress, toAddress)
+                {
+                    Subject = subject,
+                    Body = body
+                })
+                {
+                    smtp.Send(message);
+                }
+                
+                lblRegistrado.Text = "Se ha mandado un email de confirmación a " + tbEmail.Text;
+                Server.Transfer("Inicio.aspx");
             }
             catch (Exception ex)
             {
