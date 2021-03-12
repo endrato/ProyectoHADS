@@ -11,6 +11,11 @@
     <form id="form1" runat="server">
         <div>
             Sesión iniciada correctamente</div>
+        <asp:SqlDataSource ID="sqlTipo" runat="server" ConnectionString="<%$ ConnectionStrings:HADS21-19ConnectionString %>" SelectCommand="SELECT [tipo] FROM [Usuarios] WHERE ([email] = @email)">
+            <SelectParameters>
+                <asp:SessionParameter Name="email" SessionField="email" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
     </form>
 </body>
 </html>

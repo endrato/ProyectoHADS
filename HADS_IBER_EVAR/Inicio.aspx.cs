@@ -18,6 +18,8 @@ namespace HADS_IBER_EVAR
         {
             if (Lab3.DataAccess.iniciarSesion(tbEmail.Text, tbPassword.Text))
             {
+                Session["email"] = tbEmail.Text;
+                
                 Server.Transfer("Principal.aspx");
 
                 Console.WriteLine("Login correcto");

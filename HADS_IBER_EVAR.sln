@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HADS_IBER_EVAR", "HADS_IBER_EVAR\HADS_IBER_EVAR.csproj", "{FFB6BACC-0154-4BDA-82C9-C44A7E9FCD81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3", "Lab3\Lab3.csproj", "{7900412A-F030-4016-B656-DCB7ADD7CC1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab3", "Lab3\Lab3.csproj", "{7900412A-F030-4016-B656-DCB7ADD7CC1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab4", "Lab4\Lab4.csproj", "{13B28AF9-366C-4590-AD19-4C03BE1C761C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7900412A-F030-4016-B656-DCB7ADD7CC1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7900412A-F030-4016-B656-DCB7ADD7CC1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7900412A-F030-4016-B656-DCB7ADD7CC1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13B28AF9-366C-4590-AD19-4C03BE1C761C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13B28AF9-366C-4590-AD19-4C03BE1C761C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13B28AF9-366C-4590-AD19-4C03BE1C761C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13B28AF9-366C-4590-AD19-4C03BE1C761C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

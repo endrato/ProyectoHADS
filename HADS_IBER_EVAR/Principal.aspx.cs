@@ -11,7 +11,15 @@ namespace HADS_IBER_EVAR
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            String tipo = Lab4.ADO.getTipo(Session["email"].ToString());
+            if ( tipo == "Profesor")
+            {
+                Response.Redirect("Profesor.aspx");
+            }
+            else {
+                Response.Redirect("Alumno.aspx");
+            
+            }
         }
     }
 }
