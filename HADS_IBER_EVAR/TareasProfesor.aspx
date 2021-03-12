@@ -35,6 +35,7 @@
             <p>
             <asp:GridView ID="gvTareasProf" runat="server" AutoGenerateColumns="False" DataKeyNames="Codigo" DataSourceID="sqlTareasProfTabla" OnSelectedIndexChanged="gvTareasProf_SelectedIndexChanged">
                 <Columns>
+                    <asp:CommandField ShowEditButton="True" />
                     <asp:BoundField DataField="Codigo" HeaderText="Codigo" ReadOnly="True" SortExpression="Codigo" />
                     <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" SortExpression="Descripcion" />
                     <asp:BoundField DataField="CodAsig" HeaderText="CodAsig" SortExpression="CodAsig" />

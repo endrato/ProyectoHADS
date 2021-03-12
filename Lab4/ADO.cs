@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace Lab4
@@ -32,5 +33,37 @@ namespace Lab4
             }
 
         }
+
+        public static void insertarTarea() {
+            DataTable table = new DataTable();
+
+            int horas;
+            if (int.TryParse(horasEstimadas.Text, out horas))
+            {
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM TareasGenericas", connection);
+                sda.InsertCommand = new SqlCommand("INSERT INTO TareasGenericas VALUES(@codigo, @descripcion,@codAsig, @hEstimadas, @explotacion, @tipoTarea)", connection);
+                sda.InsertCommand.Parameters.Add("@codigo", SqlDbType.NVarChar, 50, "Codigo");
+                sda.InsertCommand.Parameters.Add("@descripcion", SqlDbType.NVarChar, 50, "Descripcion");
+                sda.InsertCommand.Parameters.Add("@codAsig", SqlDbType.NVarChar, 50, "CodAsig");
+                sda.InsertCommand.Parameters.Add("@hEstimadas", SqlDbType.Int, 10, "HEstimadas");
+                sda.InsertCommand.Parameters.Add("@explotacion", SqlDbType.Bit, 1, "explotacion");
+                sda.InsertCommand.Parameters.Add("@tipoTarea", SqlDbType.NVarChar, 50, "TipoTarea");
+
+                sda.Fill(table);
+                table.Rows.Add(codigo.Text, descripcion.Text, asignaturas.SelectedValue, horas, false, tipoTarea.SelectedValue);
+                sda.Update(table);
+                //Mostrar Mensaje de todo guay.
+                todoGuayAlert.Visible = true;
+                horasNumero.Visible = false;
+            }
+            else
+            {//Mostrar error de que las horas introducidas son incorrectas
+                todoGuayAlert.Visible = false;
+                horasNumero.Visible = true;
+
+            }
+        } 
     }
 }

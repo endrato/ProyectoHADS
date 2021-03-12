@@ -20,8 +20,13 @@
             <asp:TextBox ID="tbDescripcion" runat="server"></asp:TextBox>
             <br />
             <asp:Label ID="Label5" runat="server" Text="Asignatura"></asp:Label>
-            <asp:DropDownList ID="dlAsignatura" runat="server">
+            <asp:DropDownList ID="dlAsignaturas" runat="server" DataSourceID="sqlTareasProf" DataTextField="codigo">
             </asp:DropDownList>
+            <asp:SqlDataSource ID="sqlTareasProf" runat="server" ConnectionString="<%$ ConnectionStrings:HADS21-19ConnectionString %>" SelectCommand="SELECT Asignaturas.codigo FROM Usuarios CROSS JOIN Asignaturas WHERE (Usuarios.email = @email)">
+                <SelectParameters>
+                    <asp:SessionParameter Name="email" SessionField="email" DbType="String" />
+                </SelectParameters>
+            </asp:SqlDataSource>
             <br />
             <asp:Label ID="Label6" runat="server" Text="Horas estimadas"></asp:Label>
             <asp:TextBox ID="tbHrsEstimadas" runat="server"></asp:TextBox>
@@ -30,7 +35,7 @@
             <asp:DropDownList ID="dlTipo" runat="server">
             </asp:DropDownList>
             <br />
-            <asp:Button ID="btnAnadir" runat="server" Text="Añadir" />
+            <asp:Button ID="btnAnadir" runat="server" Text="Añadir" OnClick="btnAnadir_Click" />
             <br />
             <asp:HyperLink ID="hlVerTareas" runat="server">Ver tareas</asp:HyperLink>
         </div>

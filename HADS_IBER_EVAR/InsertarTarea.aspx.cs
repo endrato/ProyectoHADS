@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,6 +14,12 @@ namespace HADS_IBER_EVAR
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnAnadir_Click(object sender, EventArgs e)
+        {
+            //coger datos de los controles y pasar como params
+            Lab4.ADO.insertarTarea();
         }
     }
 }
