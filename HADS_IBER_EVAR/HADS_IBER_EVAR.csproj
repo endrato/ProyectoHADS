@@ -317,7 +317,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\hads21-19 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\hads21-19 - ReadOnly - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\hads21-19 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\hads21-19 - Web Deploy1.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

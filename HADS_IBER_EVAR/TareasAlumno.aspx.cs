@@ -14,7 +14,7 @@ namespace HADS_IBER_EVAR
         protected void Page_Load(object sender, EventArgs e)
         {
            
-                actualizargrid();
+            actualizargrid();
             
             
         }

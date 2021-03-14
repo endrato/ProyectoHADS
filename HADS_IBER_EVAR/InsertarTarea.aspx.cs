@@ -39,14 +39,16 @@ namespace HADS_IBER_EVAR
                 sda.Fill(table);
                 table.Rows.Add(tbCodigo.Text, tbDescripcion.Text, dlAsignaturas.SelectedValue, horas, false, dlTipo.SelectedValue);
                 sda.Update(table);
-                //Mostrar Mensaje de todo guay.
-                //todoGuayAlert.Visible = true;
-                //horasNumero.Visible = false;
+                Correcto.Visible = true;
+                ERROR.Visible = false;
+                tbCodigo.Text = "";
+                tbDescripcion.Text = "";
+                tbHrsEstimadas.Text = "";
             }
             else
-            {//Mostrar error de que las horas introducidas son incorrectas
-                //todoGuayAlert.Visible = false;
-                //horasNumero.Visible = true;
+            {
+                Correcto.Visible = false;
+                ERROR.Visible = true;
             }
         }
 

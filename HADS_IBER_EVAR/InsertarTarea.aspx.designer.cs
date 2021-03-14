@@ -96,6 +96,24 @@ namespace HADS_IBER_EVAR
         protected global::System.Web.UI.WebControls.SqlDataSource sqlTareasProf;
 
         /// <summary>
+        /// Correcto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Correcto;
+
+        /// <summary>
+        /// ERROR control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ERROR;
+
+        /// <summary>
         /// Label6 control.
         /// </summary>
         /// <remarks>
