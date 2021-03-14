@@ -856,19 +856,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\innib\\.nuget\\packages\\": {}
+    "C:\\Users\\Enika\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\innib\\source\\repos\\ProyectoHADS\\Lab3\\Lab3.csproj",
+      "projectUniqueName": "C:\\Users\\Enika\\Source\\Repos\\berganza14\\ProyectoHADS\\Lab3\\Lab3.csproj",
       "projectName": "Lab3",
-      "projectPath": "C:\\Users\\innib\\source\\repos\\ProyectoHADS\\Lab3\\Lab3.csproj",
-      "packagesPath": "C:\\Users\\innib\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\innib\\source\\repos\\ProyectoHADS\\Lab3\\obj\\",
+      "projectPath": "C:\\Users\\Enika\\Source\\Repos\\berganza14\\ProyectoHADS\\Lab3\\Lab3.csproj",
+      "packagesPath": "C:\\Users\\Enika\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Enika\\Source\\Repos\\berganza14\\ProyectoHADS\\Lab3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\innib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Enika\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

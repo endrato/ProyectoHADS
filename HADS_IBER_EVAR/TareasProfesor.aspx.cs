@@ -21,7 +21,12 @@ namespace HADS_IBER_EVAR
 
         protected void gvTareasProf_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        protected void dlAsignaturas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

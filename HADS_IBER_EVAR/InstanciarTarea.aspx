@@ -18,28 +18,44 @@
         </p>
             <p>
                 <asp:Label ID="Label3" runat="server" Text="Usuario"></asp:Label>
-                <asp:TextBox ID="tbUsuario" runat="server"></asp:TextBox>
+                <asp:TextBox ID="tbUsuario" runat="server" ReadOnly="True"></asp:TextBox>
         </p>
             <p>
                 <asp:Label ID="Label4" runat="server" Text="Tarea"></asp:Label>
-                <asp:TextBox ID="tbTarea" runat="server"></asp:TextBox>
+                <asp:TextBox ID="tbTarea" runat="server" ReadOnly="True"></asp:TextBox>
         </p>
             <p>
                 <asp:Label ID="Label5" runat="server" Text="Horas estimadas"></asp:Label>
-                <asp:TextBox ID="tbHrsEst" runat="server"></asp:TextBox>
+                <asp:TextBox ID="tbHrsEst" runat="server" ReadOnly="True"></asp:TextBox>
         </p>
             <p>
                 <asp:Label ID="Label6" runat="server" Text="Horas reales"></asp:Label>
                 <asp:TextBox ID="tbHrsReal" runat="server"></asp:TextBox>
         </p>
+            <div class="form-row">
+                <div runat="server" class="alert alert-danger" role="alert" id="formatoHoras" visible="false">
+                    &nbsp;Introduce un número válido para las horas.
+                </div>
+
+                <div runat="server" class="alert alert-danger" role="alert" id="ErrorRegistro" visible="false">
+                    Error insertando la tarea.
+                </div>
+
+                <div runat="server" class="alert alert-success" role="alert" id="Correcto" visible="false">
+                    Tarea insertada correctamente.
+                </div>
+                <div runat="server" class="alert alert-danger" role="alert" id="TareaRepeAlerta" visible="false">
+                    La tarea ya existe.
+        </div>
+    </div>
             <p>
-                <asp:Button ID="Button1" runat="server" Text="Crear" />
-                <asp:GridView ID="GridView1" runat="server">
+                <asp:Button ID="Button1" runat="server" Text="Crear" OnClick="Button1_Click" />
+                <asp:GridView ID="gvTareas" runat="server">
                 </asp:GridView>
         </p>
         </div>
         <p>
-            <asp:HyperLink ID="HyperLink1" runat="server">Página anterior</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/TareasAlumno.aspx">Página anterior</asp:HyperLink>
         </p>
     </form>
 </body>

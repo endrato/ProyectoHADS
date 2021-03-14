@@ -20,11 +20,18 @@
             <asp:Label ID="Label3" runat="server" Text=" Seleccionar asignatura (sólo se muestran en las que estas matriculado)"></asp:Label>
         </p>
         <p>
-            <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:DropDownList ID="dlAsig" runat="server" DataSourceID="SqlDataSource1" DataTextField="codigoasig" DataValueField="codigoasig" AutoPostBack="True" OnSelectedIndexChanged="dlAsig_SelectedIndexChanged" >
             </asp:DropDownList>
-            <asp:GridView ID="gvTareasAlum" runat="server">
-            </asp:GridView>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HADS21-19ConnectionString %>" SelectCommand="SELECT GruposClase.codigoasig FROM EstudiantesGrupo INNER JOIN GruposClase ON EstudiantesGrupo.Grupo = GruposClase.codigo WHERE (EstudiantesGrupo.Email = @param1)">
+                <SelectParameters>
+                    <asp:SessionParameter Name="param1" SessionField="email" DbType="String" />
+                </SelectParameters>
+            </asp:SqlDataSource>
         </p>
+            <div id="tareasView" class="table-responsive">
+            <asp:GridView ID="gvTareasAlum" runat="server" OnSelectedIndexChanged="gvTareasAlum_SelectedIndexChanged" AutoGenerateSelectButton="True" >
+            </asp:GridView>
+            </div>
     </form>
 </body>
 </html>

@@ -34,7 +34,7 @@ namespace Lab4
 
         }
 
-        public static void insertarTarea() {
+        /*public static void insertarTarea() {
             DataTable table = new DataTable();
 
             int horas;
@@ -64,6 +64,6 @@ namespace Lab4
                 horasNumero.Visible = true;
 
             }
-        } 
+        }*/ 
     }
 }

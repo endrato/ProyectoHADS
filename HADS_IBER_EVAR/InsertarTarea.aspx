@@ -32,7 +32,11 @@
             <asp:TextBox ID="tbHrsEstimadas" runat="server"></asp:TextBox>
             <br />
             <asp:Label ID="Label7" runat="server" Text="Tipo tarea"></asp:Label>
-            <asp:DropDownList ID="dlTipo" runat="server">
+            <asp:DropDownList ID="dlTipo" runat="server" OnSelectedIndexChanged="dlTipo_SelectedIndexChanged">
+                <asp:ListItem Value="Examen" />
+                <asp:ListItem Value="Laboratorio" />
+                <asp:ListItem Value="Ejercicio" />
+                <asp:ListItem Value="Trabajo" />
             </asp:DropDownList>
             <br />
             <asp:Button ID="btnAnadir" runat="server" Text="Añadir" OnClick="btnAnadir_Click" />

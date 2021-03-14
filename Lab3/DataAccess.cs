@@ -8,6 +8,63 @@ namespace Lab3
     {
         private const string connectionString = "Server=tcp:hads21-19.database.windows.net,1433;Initial Catalog=HADS21-19;Persist Security Info=False;User ID=iberganza004@ikasle.ehu.eus@hads21-19;Password=deLOCOS!!!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
+        public static string getConnectionString()
+        {
+            return connectionString;
+        }
+        public static Boolean tareaRepe(String email, String cod)
+        {
+            Boolean esta = false;
+            string queryString = "SELECT * FROM EstudiantesTareas WHERE Email='" + email + "' AND CodTarea='" + cod + "'";
+
+            using (SqlConnection connection = new SqlConnection(
+                       connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Connection.Open();
+
+                try
+                {
+                    SqlDataReader dr = command.ExecuteReader();
+                    command.Connection.Close();
+                    if (dr.Read())
+                    {
+                        esta = true;
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error ");
+                    Console.WriteLine(ex.Message);
+                }
+                esta = false;
+            }
+            return esta;
+        }
+        public static int insertarTarea(String email,String cod,String horasE,String horasR)
+        {
+            String queryString = "INSERT INTO EstudiantesTareas VALUES('" + email + "', '" + cod + "'," + horasE + " ," + horasR + " )";
+            int resul = 0;
+            using (SqlConnection connection = new SqlConnection(
+                       connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Connection.Open();
+                try
+                {
+                    resul = command.ExecuteNonQuery();
+                    command.Connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error ");
+                    Console.WriteLine(ex.Message);
+                }
+            }
+                
+            return resul;
+        }
         public static void registrarUsuario(String emilio, String nombre, String apellidos, int numConfir, Boolean confirmado, String tipo, String pass)
         {
             string queryString = "INSERT into dbo.Usuarios (email,nombre,apellidos, numconfir, confirmado, tipo, pass) " +
