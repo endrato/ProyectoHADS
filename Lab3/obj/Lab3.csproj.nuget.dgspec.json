@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\innib\\Source\\Repos\\labosHADS\\Lab3\\Lab3.csproj": {}
+    "C:\\Users\\innib\\Source\\Repos\\ProyectoHADS\\Lab3\\Lab3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\innib\\Source\\Repos\\labosHADS\\Lab3\\Lab3.csproj": {
+    "C:\\Users\\innib\\Source\\Repos\\ProyectoHADS\\Lab3\\Lab3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\innib\\Source\\Repos\\labosHADS\\Lab3\\Lab3.csproj",
+        "projectUniqueName": "C:\\Users\\innib\\Source\\Repos\\ProyectoHADS\\Lab3\\Lab3.csproj",
         "projectName": "Lab3",
-        "projectPath": "C:\\Users\\innib\\Source\\Repos\\labosHADS\\Lab3\\Lab3.csproj",
+        "projectPath": "C:\\Users\\innib\\Source\\Repos\\ProyectoHADS\\Lab3\\Lab3.csproj",
         "packagesPath": "C:\\Users\\innib\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\innib\\Source\\Repos\\labosHADS\\Lab3\\obj\\",
+        "outputPath": "C:\\Users\\innib\\Source\\Repos\\ProyectoHADS\\Lab3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\innib\\AppData\\Roaming\\NuGet\\NuGet.Config",

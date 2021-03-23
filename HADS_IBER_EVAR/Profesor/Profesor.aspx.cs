@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace HADS_IBER_EVAR
+namespace HADS_IBER_EVAR.Profesor
 {
     public partial class Profesor : System.Web.UI.Page
     {

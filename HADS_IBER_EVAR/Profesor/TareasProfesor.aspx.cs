@@ -16,7 +16,7 @@ namespace HADS_IBER_EVAR
 
         protected void btnInsertar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("InsertarTarea.aspx");
+            Response.Redirect("/Profesor/InsertarTarea.aspx");
         }
 
         protected void gvTareasProf_SelectedIndexChanged(object sender, EventArgs e)

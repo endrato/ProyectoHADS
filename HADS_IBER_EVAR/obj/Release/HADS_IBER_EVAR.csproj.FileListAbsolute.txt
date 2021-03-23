@@ -140,3 +140,5 @@ C:\Users\Enika\source\repos\berganza14\ProyectoHADS\HADS_IBER_EVAR\obj\Release\H
 C:\Users\Enika\source\repos\berganza14\ProyectoHADS\HADS_IBER_EVAR\obj\Release\HADS_IBER_EVAR.csproj.CopyComplete
 C:\Users\Enika\source\repos\berganza14\ProyectoHADS\HADS_IBER_EVAR\obj\Release\HADS_IBER_EVAR.dll
 C:\Users\Enika\source\repos\berganza14\ProyectoHADS\HADS_IBER_EVAR\obj\Release\HADS_IBER_EVAR.pdb
+C:\Users\innib\Source\Repos\ProyectoHADS\HADS_IBER_EVAR\bin\Lab4.dll
+C:\Users\innib\Source\Repos\ProyectoHADS\HADS_IBER_EVAR\bin\Lab4.pdb

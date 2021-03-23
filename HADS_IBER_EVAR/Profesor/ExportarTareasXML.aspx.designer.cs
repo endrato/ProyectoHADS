@@ -78,13 +78,13 @@ namespace HADS_IBER_EVAR.Profesor
         protected global::System.Web.UI.WebControls.GridView gvTareas;
 
         /// <summary>
-        /// Control btnImportar.
+        /// Control btnExportar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnImportar;
+        protected global::System.Web.UI.WebControls.Button btnExportar;
 
         /// <summary>
         /// Control lblFeedback.
