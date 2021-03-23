@@ -222,25 +222,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Alumno.aspx" />
+    <Content Include="Alumno\Alumno.aspx" />
+    <Content Include="App_Data\HAS.xml" />
+    <Content Include="App_Data\SEG.xml" />
+    <Content Include="App_Data\VerTablaTareas.xsl" />
     <Content Include="CambiarPassword.aspx" />
     <Content Include="Confirmar.aspx" />
     <Content Include="Principal.aspx" />
-    <Content Include="Profesor.aspx" />
-    <Content Include="TareasAlumno.aspx" />
+    <Content Include="Profesor\ExportarTareasXML.aspx" />
+    <Content Include="Profesor\ImportarTareasXML.aspx" />
+    <Content Include="Profesor\Profesor.aspx" />
+    <Content Include="Alumno\TareasAlumno.aspx" />
     <Content Include="Web.config" />
     <Content Include="Inicio.aspx" />
     <Content Include="Registro.aspx" />
-    <Content Include="InsertarTarea.aspx" />
-    <Content Include="TareasProfesor.aspx" />
-    <Content Include="InstanciarTarea.aspx" />
+    <Content Include="Profesor\InsertarTarea.aspx" />
+    <Content Include="Profesor\TareasProfesor.aspx" />
+    <Content Include="Alumno\InstanciarTarea.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alumno.aspx.cs">
+    <Compile Include="Alumno\Alumno.aspx.cs">
       <DependentUpon>Alumno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Alumno.aspx.designer.cs">
+    <Compile Include="Alumno\Alumno.aspx.designer.cs">
       <DependentUpon>Alumno.aspx</DependentUpon>
     </Compile>
     <Compile Include="CambiarPassword.aspx.cs">
@@ -264,11 +269,25 @@
     <Compile Include="Principal.aspx.designer.cs">
       <DependentUpon>Principal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Profesor.aspx.cs">
+    <Compile Include="Profesor\ExportarTareasXML.aspx.cs">
+      <DependentUpon>ExportarTareasXML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profesor\ExportarTareasXML.aspx.designer.cs">
+      <DependentUpon>ExportarTareasXML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\ImportarTareasXML.aspx.cs">
+      <DependentUpon>ImportarTareasXML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profesor\ImportarTareasXML.aspx.designer.cs">
+      <DependentUpon>ImportarTareasXML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\Profesor.aspx.cs">
       <DependentUpon>Profesor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Profesor.aspx.designer.cs">
+    <Compile Include="Profesor\Profesor.aspx.designer.cs">
       <DependentUpon>Profesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -286,36 +305,39 @@
     <Compile Include="Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TareasAlumno.aspx.cs">
+    <Compile Include="Alumno\TareasAlumno.aspx.cs">
       <DependentUpon>TareasAlumno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TareasAlumno.aspx.designer.cs">
+    <Compile Include="Alumno\TareasAlumno.aspx.designer.cs">
       <DependentUpon>TareasAlumno.aspx</DependentUpon>
     </Compile>
-    <Compile Include="InsertarTarea.aspx.cs">
+    <Compile Include="Profesor\InsertarTarea.aspx.cs">
       <DependentUpon>InsertarTarea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="InsertarTarea.aspx.designer.cs">
+    <Compile Include="Profesor\InsertarTarea.aspx.designer.cs">
       <DependentUpon>InsertarTarea.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TareasProfesor.aspx.cs">
+    <Compile Include="Profesor\TareasProfesor.aspx.cs">
       <DependentUpon>TareasProfesor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TareasProfesor.aspx.designer.cs">
+    <Compile Include="Profesor\TareasProfesor.aspx.designer.cs">
       <DependentUpon>TareasProfesor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="InstanciarTarea.aspx.cs">
+    <Compile Include="Alumno\InstanciarTarea.aspx.cs">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="InstanciarTarea.aspx.designer.cs">
+    <Compile Include="Alumno\InstanciarTarea.aspx.designer.cs">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App_Data\tareas.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\hads21-19 - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\hads21-19 - ReadOnly - FTP.pubxml" />
@@ -338,6 +360,7 @@
       <Name>Lab4</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
