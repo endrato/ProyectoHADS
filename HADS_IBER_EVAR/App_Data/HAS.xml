@@ -1,1 +1,32 @@
-﻿<?xml version="1.0" encoding="utf-8"?><tareas xmlns:has="http://ji.ehu.es/has"><tarea codigo="HAS20-Lab1"><descripcion>Lab componentes2</descripcion><hestimadas>6</hestimadas><explotacion>True</explotacion><tipotarea>Laboratorio</tipotarea></tarea><tarea codigo="HAS20-Lab10"><descripcion>Sobre django</descripcion><hestimadas>10</hestimadas><explotacion>True</explotacion><tipotarea>Laboratorio</tipotarea></tarea><tarea codigo="HAS20-Lab2"><descripcion>Web Forms</descripcion><hestimadas>12</hestimadas><explotacion>True</explotacion><tipotarea>Laboratorio</tipotarea></tarea><tarea codigo="HAS20-Test1"><descripcion>Test 1 de la asignatura</descripcion><hestimadas>3</hestimadas><explotacion>False</explotacion><tipotarea>examen</tipotarea></tarea><tarea codigo="HAS21-LAB4"><descripcion>Lab sobre ADO.NET</descripcion><hestimadas>20</hestimadas><explotacion>True</explotacion><tipotarea>Laboratorio</tipotarea></tarea></tareas>
+﻿<?xml version="1.0" encoding="utf-8"?><tareas xmlns:has="http://ji.ehu.es/has">
+    <tarea Codigo="HAS20-Lab1">
+        <Descripcion>Lab componentes2</Descripcion>
+        <HEstimadas>6</HEstimadas>
+        <Explotacion>True</Explotacion>
+        <Tipotarea>Laboratorio</Tipotarea>
+    </tarea>
+    <tarea Codigo="HAS20-Lab10">
+        <Descripcion>Sobre django</Descripcion>
+        <HEstimadas>10</HEstimadas>
+        <Explotacion>True</Explotacion>
+        <Tipotarea>Laboratorio</Tipotarea>
+    </tarea>
+    <tarea Codigo="HAS20-Lab2">
+        <Descripcion>Web Forms</Descripcion>
+        <HEstimadas>12</HEstimadas>
+        <Explotacion>True</Explotacion>
+        <Tipotarea>Laboratorio</Tipotarea>
+    </tarea>
+    <tarea Codigo="HAS20-Test1">
+        <Descripcion>Test 1 de la asignatura</Descripcion>
+        <HEstimadas>3</HEstimadas>
+        <Explotacion>False</Explotacion>
+        <Tipotarea>examen</Tipotarea>
+    </tarea>
+    <tarea Codigo="HAS21-LAB4">
+        <Descripcion>Lab sobre ADO.NET</Descripcion>
+        <HEstimadas>20</HEstimadas>
+        <Explotacion>True</Explotacion>
+        <Tipotarea>Laboratorio</Tipotarea>
+    </tarea>
+</tareas>

@@ -1,1 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8"?><tareas xmlns:has="http://ji.ehu.es/has"><tarea codigo="ISO21-L1"><descripcion>Lab 1</descripcion><hestimadas>21</hestimadas><explotacion>True</explotacion><tipotarea>Laboratorio</tipotarea></tarea><tarea codigo="ISO-5"><descripcion>EXAMEN ISO</descripcion><hestimadas>1</hestimadas><explotacion>False</explotacion><tipotarea>Examen</tipotarea></tarea><tarea codigo="ISO-Lab1"><descripcion>Laboratorio de SWING</descripcion><hestimadas>12</hestimadas><explotacion>True</explotacion><tipotarea>Laboratorio</tipotarea></tarea></tareas>
+<?xml version="1.0" standalone="yes"?>
+<tareas>
+  <tarea Codigo="ISO21-L1">
+    <Descripcion>Lab 1</Descripcion>
+    <CodAsig>ISO</CodAsig>
+    <HEstimadas>21</HEstimadas>
+    <Explotacion>true</Explotacion>
+    <TipoTarea>Laboratorio</TipoTarea>
+  </tarea>
+  <tarea Codigo="ISO-5">
+    <Descripcion>EXAMEN ISO</Descripcion>
+    <CodAsig>ISO</CodAsig>
+    <HEstimadas>1</HEstimadas>
+    <Explotacion>false</Explotacion>
+    <TipoTarea>Examen</TipoTarea>
+  </tarea>
+  <tarea Codigo="ISO-Lab1">
+    <Descripcion>Laboratorio de SWING</Descripcion>
+    <CodAsig>ISO</CodAsig>
+    <HEstimadas>12</HEstimadas>
+    <Explotacion>true</Explotacion>
+    <TipoTarea>Laboratorio</TipoTarea>
+  </tarea>
+</tareas>
