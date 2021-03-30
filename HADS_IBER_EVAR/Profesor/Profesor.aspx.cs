@@ -11,7 +11,17 @@ namespace HADS_IBER_EVAR.Profesor
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            String tipo = Session["usuario"].ToString();
+            if(tipo == "Vadillo")
+            {
+                HyperLink2.Visible = true;
+                HyperLink3.Visible = true;
+            }
+            else
+            {
+                HyperLink2.Visible = false;
+                HyperLink3.Visible = false;
+            }
         }
     }
 }

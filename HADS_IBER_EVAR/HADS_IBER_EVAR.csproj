@@ -225,12 +225,12 @@
     <Content Include="Alumno\Alumno.aspx" />
     <Content Include="App_Data\HAS.xml" />
     <Content Include="App_Data\SEG.xml" />
-    <Content Include="App_Data\VerTablaTareas.xsl" />
+    <Content Include="App_Data\VerTablaTareas.xsl">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="CambiarPassword.aspx" />
     <Content Include="Confirmar.aspx" />
     <Content Include="Principal.aspx" />
-    <Content Include="Profesor\ExportarTareasXML.aspx" />
-    <Content Include="Profesor\ImportarTareasXML.aspx" />
     <Content Include="Profesor\Profesor.aspx" />
     <Content Include="Alumno\TareasAlumno.aspx" />
     <Content Include="Web.config" />
@@ -268,20 +268,6 @@
     </Compile>
     <Compile Include="Principal.aspx.designer.cs">
       <DependentUpon>Principal.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Profesor\ExportarTareasXML.aspx.cs">
-      <DependentUpon>ExportarTareasXML.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Profesor\ExportarTareasXML.aspx.designer.cs">
-      <DependentUpon>ExportarTareasXML.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Profesor\ImportarTareasXML.aspx.cs">
-      <DependentUpon>ImportarTareasXML.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Profesor\ImportarTareasXML.aspx.designer.cs">
-      <DependentUpon>ImportarTareasXML.aspx</DependentUpon>
     </Compile>
     <Compile Include="Profesor\Profesor.aspx.cs">
       <DependentUpon>Profesor.aspx</DependentUpon>

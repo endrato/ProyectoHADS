@@ -12,9 +12,9 @@
         <div>
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Profesor/TareasProfesor.aspx">Tareas</asp:HyperLink>
             <br />
-            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Profesor/ImportarTareasXML.aspx">ImportarXML</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Profesor/Vadillo/ImportarTareasXML.aspx">ImportarXML</asp:HyperLink>
             <br />
-            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Profesor/ExportarTareasXML.aspx">ExportarXML</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Profesor/Vadillo/ExportarTareasXML.aspx">ExportarXML</asp:HyperLink>
         </div>
     </form>
 </body>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -14,7 +15,7 @@ namespace HADS_IBER_EVAR
             String tipo = Lab4.ADO.getTipo(Session["email"].ToString());
             if ( tipo == "Profesor")
             {
-                if(Session["email"].ToString()="vadillo@ehu.es")
+                if(Session["email"].ToString().Equals("vadillo@ehu.es"))
                 {
                     FormsAuthentication.SetAuthCookie("Vadillo", false);
                     Session["usuario"] = "Vadillo";
@@ -27,11 +28,10 @@ namespace HADS_IBER_EVAR
                 Response.Redirect("Profesor/Profesor.aspx");
             }
             else {
-                FormsAuthentication.SetAuthCookie("Alumno", false);
                 Session["usuario"] = "Alumno";  
                 Response.Redirect("Alumno/Alumno.aspx");
-                }
             }
+            
         }
     }
 }

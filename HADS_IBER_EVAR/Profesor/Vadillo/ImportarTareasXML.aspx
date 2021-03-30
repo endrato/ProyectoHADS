@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ImportarTareasXML.aspx.cs" Inherits="HADS_IBER_EVAR.Profesor.Vadillo.ImportarTareasXML" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ImportarTareasXML.aspx.cs" Inherits="HADS_IBER_EVAR.ImportarTareasXML" %>
 
 <!DOCTYPE html>
 

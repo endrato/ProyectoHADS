@@ -9,7 +9,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
 
-namespace HADS_IBER_EVAR.Profesor
+namespace HADS_IBER_EVAR.Profesor.Vadillo
 {
     public partial class ExportarTareasXML : System.Web.UI.Page
     {
