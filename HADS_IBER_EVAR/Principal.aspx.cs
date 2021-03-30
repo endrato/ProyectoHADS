@@ -14,13 +14,24 @@ namespace HADS_IBER_EVAR
             String tipo = Lab4.ADO.getTipo(Session["email"].ToString());
             if ( tipo == "Profesor")
             {
+                if(Session["email"].ToString()="vadillo@ehu.es")
+                {
+                    FormsAuthentication.SetAuthCookie("Vadillo", false);
+                    Session["usuario"] = "Vadillo";
+                }
+                else
+                {
+                    FormsAuthentication.SetAuthCookie("Profesor", false);
+                    Session["usuario"] = "Profesor";  
+                }
                 Response.Redirect("Profesor/Profesor.aspx");
             }
             else {
+                FormsAuthentication.SetAuthCookie("Alumno", false);
+                Session["usuario"] = "Alumno";  
                 Response.Redirect("Alumno/Alumno.aspx");
-            
+                }
             }
         }
-
     }
 }

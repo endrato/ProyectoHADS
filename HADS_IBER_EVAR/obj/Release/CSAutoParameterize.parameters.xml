@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="HADS21-19ConnectionString-Web.config Connection String" description="HADS21-19ConnectionString Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=tcp:hads21-19.database.windows.net,1433;Initial Catalog=HADS21-19;Persist Security Info=True;User ID=iberganza004@ikasle.ehu.eus@hads21-19;Password=deLOCOS!!!" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\innib\\Source\\Repos\\ProyectoHADS\\HADS_IBER_EVAR\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='HADS21-19ConnectionString']/@connectionString" />
+  <parameter name="HADS21-19ConnectionString-Web.config Connection String" description="HADS21-19ConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=tcp:hads21-19.database.windows.net,1433;Initial Catalog=HADS21-19;Persist Security Info=True;User ID=iberganza004@ikasle.ehu.eus@hads21-19;Password=deLOCOS!!!" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Enika\\Source\\Repos\\berganza14\\ProyectoHADS\\HADS_IBER_EVAR\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='HADS21-19ConnectionString']/@connectionString" />
   </parameter>
 </parameters>
