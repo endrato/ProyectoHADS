@@ -230,9 +230,12 @@
     </Content>
     <Content Include="CambiarPassword.aspx" />
     <Content Include="Confirmar.aspx" />
+    <Content Include="Errors\404.aspx" />
     <Content Include="Principal.aspx" />
     <Content Include="Profesor\Profesor.aspx" />
     <Content Include="Alumno\TareasAlumno.aspx" />
+    <Content Include="Profesor\Vadillo\ExportarTareasXML.aspx" />
+    <Content Include="Profesor\Vadillo\ImportarTareasXML.aspx" />
     <Content Include="Web.config" />
     <Content Include="Inicio.aspx" />
     <Content Include="Registro.aspx" />
@@ -262,6 +265,13 @@
     <Compile Include="Confirmar.aspx.designer.cs">
       <DependentUpon>Confirmar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Errors\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errors\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Principal.aspx.cs">
       <DependentUpon>Principal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -275,6 +285,20 @@
     </Compile>
     <Compile Include="Profesor\Profesor.aspx.designer.cs">
       <DependentUpon>Profesor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\Vadillo\ExportarTareasXML.aspx.cs">
+      <DependentUpon>ExportarTareasXML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profesor\Vadillo\ExportarTareasXML.aspx.designer.cs">
+      <DependentUpon>ExportarTareasXML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\Vadillo\ImportarTareasXML.aspx.cs">
+      <DependentUpon>ImportarTareasXML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profesor\Vadillo\ImportarTareasXML.aspx.designer.cs">
+      <DependentUpon>ImportarTareasXML.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Inicio.aspx.cs">

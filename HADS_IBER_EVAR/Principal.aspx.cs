@@ -28,7 +28,8 @@ namespace HADS_IBER_EVAR
                 Response.Redirect("Profesor/Profesor.aspx");
             }
             else {
-                Session["usuario"] = "Alumno";  
+                FormsAuthentication.SetAuthCookie("Alumno", false);
+                Session["usuario"] = "Alumno";
                 Response.Redirect("Alumno/Alumno.aspx");
             }
             
