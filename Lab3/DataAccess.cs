@@ -79,7 +79,7 @@ namespace Lab3
                 command.Parameters.Add("@numconfir", SqlDbType.Int, 30).Value = numConfir;
                 command.Parameters.Add("@confirmado", SqlDbType.Bit, 30).Value = confirmado;
                 command.Parameters.Add("@tipo", SqlDbType.NVarChar, 30).Value = tipo;
-                command.Parameters.Add("@pass", SqlDbType.NVarChar, 30).Value = pass;
+                command.Parameters.Add("@pass", SqlDbType.NVarChar, 32).Value = pass;
                 command.Connection.Open();
                 try
                 {
