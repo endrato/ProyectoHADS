@@ -96,21 +96,21 @@ namespace Lab3
         }
         public static Boolean iniciarSesion(String emilio, String pass)
         {
-            string queryString = "SELECT email from dbo.Usuarios WHERE (email = @email AND pass = @pass AND confirmado = 'True')";
+            string queryString = "SELECT pass from dbo.Usuarios WHERE (email = @email AND confirmado = 'True')";
            
             using (SqlConnection connection = new SqlConnection(
                        connectionString))
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
                 command.Parameters.Add("@email", SqlDbType.NVarChar, 30).Value = emilio;
-                command.Parameters.Add("@pass", SqlDbType.NVarChar, 30).Value = pass;
                 command.Connection.Open();
+                StringComparer comparer = StringComparer.OrdinalIgnoreCase;
 
                 try
                 {
                     String e = (string)command.ExecuteScalar();
                     command.Connection.Close();
-                    if (e == emilio)
+                    if (0 == comparer.Compare(pass, e))
                     {
                         return true;
                        

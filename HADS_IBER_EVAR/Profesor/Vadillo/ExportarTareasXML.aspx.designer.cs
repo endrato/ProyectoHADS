@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace HADS_IBER_EVAR.Profesor
+namespace HADS_IBER_EVAR.Profesor.Vadillo
 {
 
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GSl5RY21EwbDN2awGgzxxrEblUz5F0NQy13KNi+lompwCd9pCM3pEjkEBE51blKHSAbet2+zJvWYAJUvoYM28w==",
+  "dgSpecHash": "o3moSiHn6z1cbgHeIuiuWDHHV2v+oYAEIh1woo9m6bYYkg4tig7p6z40I9ggVe0NXUydrIff44u3XTwxpqea3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Enika\\Source\\Repos\\berganza14\\ProyectoHADS\\Lab3\\Lab3.csproj",
+  "projectFilePath": "C:\\Users\\Enika\\source\\repos\\berganza14\\ProyectoHADS\\Lab3\\Lab3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enika\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Enika\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
