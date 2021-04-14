@@ -28,5 +28,10 @@ namespace HADS_IBER_EVAR
         {
             
         }
+
+        protected void dlAsignaturas_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

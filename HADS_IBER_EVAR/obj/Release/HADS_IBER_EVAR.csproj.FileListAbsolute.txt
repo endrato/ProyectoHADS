@@ -142,3 +142,4 @@ C:\Users\Enika\Source\Repos\berganza14\ProyectoHADS\HADS_IBER_EVAR\bin\System.Di
 C:\Users\Enika\Source\Repos\berganza14\ProyectoHADS\HADS_IBER_EVAR\bin\System.Reflection.TypeExtensions.dll
 C:\Users\Enika\Source\Repos\berganza14\ProyectoHADS\HADS_IBER_EVAR\bin\System.Security.Principal.Windows.dll
 C:\Users\Enika\Source\Repos\berganza14\ProyectoHADS\HADS_IBER_EVAR\bin\System.ServiceProcess.ServiceController.dll
+C:\Users\Enika\Source\Repos\berganza14\ProyectoHADS\HADS_IBER_EVAR\bin\AjaxControlToolkit.dll

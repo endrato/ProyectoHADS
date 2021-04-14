@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -23,13 +24,15 @@ namespace HADS_IBER_EVAR
                 else
                 {
                     FormsAuthentication.SetAuthCookie("Profesor", false);
-                    Session["usuario"] = "Profesor";  
+                    Session["usuario"] = "Profesor";
                 }
+                ((ArrayList)Application["ProfesorList"]).Add(Session["email"].ToString());
                 Response.Redirect("Profesor/Profesor.aspx");
             }
             else {
                 FormsAuthentication.SetAuthCookie("Alumno", false);
                 Session["usuario"] = "Alumno";
+                ((ArrayList)Application["AlumnoList"]).Add(Session["email"].ToString());
                 Response.Redirect("Alumno/Alumno.aspx");
             }
             

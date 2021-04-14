@@ -9,9 +9,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <p>
+            &nbsp;</p>
         <div>
             <asp:Label ID="Label1" runat="server" Text="ALUMNO"></asp:Label>
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Inicio.aspx">Cerrar sesión</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/CerrarSesion.aspx">Cerrar sesión</asp:HyperLink>
         </div>
         <p>
             <asp:Label ID="Label2" runat="server" Text="GESTIÓN DE TAREAS GENÉRICAS"></asp:Label>

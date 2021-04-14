@@ -17,6 +17,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <p>
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/CerrarSesion.aspx">Cerrar sesión</asp:HyperLink>
+        </p>
         <table class="auto-style1">
             <tr>
                 <td class="auto-style2">PROFESOR<br />
