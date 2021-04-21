@@ -8,6 +8,7 @@ using System.Net.Mail;
 using Microsoft.Web.Administration;
 using System.Security.Cryptography;
 using System.Text;
+using HADS_IBER_EVAR.matriculas;
 
 namespace HADS_IBER_EVAR
 {
@@ -38,42 +39,54 @@ namespace HADS_IBER_EVAR
                 tipo = "profesor";
             }
             String pass = getCriptoPass(tbPassword.Text);
-            Lab3.DataAccess.registrarUsuario(tbEmail.Text, tbNombre.Text, tbApellidos.Text, numConfir, false, tipo, pass);
-            try
-            {
-                var fromAddress = new MailAddress("hads21.19@gmail.com", "HADS21 - Grupo 19");
-                var toAddress = new MailAddress(tbEmail.Text, "Welcome");
-               
-                const string subject = "Confirmar tu cuenta";
-                string enlace = Convert.ToString("http://hads21-19.azurewebsites.net/Confirmar.aspx?emilio=" + tbEmail.Text+"&numConfir="+numConfir);
-                string body = "Clica el siguiente link para confirmar tu cuenta:\n" + enlace;
 
-             var smtp = new SmtpClient
-                {
-                    Host = "smtp.gmail.com",
-                    Port = 587,
-                    EnableSsl = true,
-                    DeliveryMethod = SmtpDeliveryMethod.Network,
-                    Credentials = new System.Net.NetworkCredential("hads21.19", "deLOCOS!!!"),
-                    Timeout = 20000
-                };
-                using (var message = new MailMessage(fromAddress, toAddress)
-                {
-                    Subject = subject,
-                    Body = body
-                })
-                {
-                    smtp.Send(message);
-                }
-                
-                lblRegistrado.Text = "Se ha mandado un email de confirmación a " + tbEmail.Text;
-                Server.Transfer("Inicio.aspx");
-            }
-            catch (Exception ex)
+            matriculas.Matriculas matricula = new matriculas.Matriculas(); 
+            string valido = matricula.comprobar(tbEmail.Text);
+            if (valido.Equals("SI"))
             {
-                Console.WriteLine(ex.ToString());
-                //MessageBox.Show(ex.ToString());
+                matriculadoLBL.Visible = false;
+                Lab3.DataAccess.registrarUsuario(tbEmail.Text, tbNombre.Text, tbApellidos.Text, numConfir, false, tipo, pass);
+                try
+                {
+                    var fromAddress = new MailAddress("hads21.19@gmail.com", "HADS21 - Grupo 19");
+                    var toAddress = new MailAddress(tbEmail.Text, "Welcome");
+
+                    const string subject = "Confirmar tu cuenta";
+                    string enlace = Convert.ToString("http://hads21-19.azurewebsites.net/Confirmar.aspx?emilio=" + tbEmail.Text + "&numConfir=" + numConfir);
+                    string body = "Clica el siguiente link para confirmar tu cuenta:\n" + enlace;
+
+                    var smtp = new SmtpClient
+                    {
+                        Host = "smtp.gmail.com",
+                        Port = 587,
+                        EnableSsl = true,
+                        DeliveryMethod = SmtpDeliveryMethod.Network,
+                        Credentials = new System.Net.NetworkCredential("hads21.19", "deLOCOS!!!"),
+                        Timeout = 20000
+                    };
+                    using (var message = new MailMessage(fromAddress, toAddress)
+                    {
+                        Subject = subject,
+                        Body = body
+                    })
+                    {
+                        smtp.Send(message);
+                    }
+
+                    lblRegistrado.Text = "Se ha mandado un email de confirmación a " + tbEmail.Text;
+                    Server.Transfer("Inicio.aspx");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                    //MessageBox.Show(ex.ToString());
+                }
             }
+            else
+            {
+                matriculadoLBL.Visible = true;
+            }
+            
 
         }
     }

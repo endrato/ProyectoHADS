@@ -18,11 +18,14 @@ namespace HADS_IBER_EVAR.Profesor
             {
                 HyperLink2.Visible = true;
                 HyperLink3.Visible = true;
+                HyperLink5.Visible = true;
             }
             else
             {
                 HyperLink2.Visible = false;
                 HyperLink3.Visible = false;
+                HyperLink5.Visible = false;
+
             }
             ArrayList alumnos = ((ArrayList)Application["AlumnoList"]);
             ArrayList profesores = ((ArrayList)Application["ProfesorList"]);

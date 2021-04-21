@@ -16,3 +16,12 @@ C:\Users\Enika\source\repos\berganza14\ProyectoHADS\Lab3\obj\Release\netstandard
 C:\Users\Enika\source\repos\berganza14\ProyectoHADS\Lab3\obj\Release\netstandard2.0\Lab3.csproj.CoreCompileInputs.cache
 C:\Users\Enika\source\repos\berganza14\ProyectoHADS\Lab3\obj\Release\netstandard2.0\Lab3.dll
 C:\Users\Enika\source\repos\berganza14\ProyectoHADS\Lab3\obj\Release\netstandard2.0\Lab3.pdb
+C:\Users\innib\source\repos\berganza14\ProyectoHADS\Lab3\bin\Release\netstandard2.0\Lab3.deps.json
+C:\Users\innib\source\repos\berganza14\ProyectoHADS\Lab3\bin\Release\netstandard2.0\Lab3.dll
+C:\Users\innib\source\repos\berganza14\ProyectoHADS\Lab3\bin\Release\netstandard2.0\Lab3.pdb
+C:\Users\innib\source\repos\berganza14\ProyectoHADS\Lab3\obj\Release\netstandard2.0\Lab3.AssemblyInfoInputs.cache
+C:\Users\innib\source\repos\berganza14\ProyectoHADS\Lab3\obj\Release\netstandard2.0\Lab3.AssemblyInfo.cs
+C:\Users\innib\source\repos\berganza14\ProyectoHADS\Lab3\obj\Release\netstandard2.0\Lab3.csproj.CoreCompileInputs.cache
+C:\Users\innib\source\repos\berganza14\ProyectoHADS\Lab3\obj\Release\netstandard2.0\Lab3.dll
+C:\Users\innib\source\repos\berganza14\ProyectoHADS\Lab3\obj\Release\netstandard2.0\Lab3.pdb
+C:\Users\innib\Source\Repos\berganza14\ProyectoHADS\Lab3\obj\Release\netstandard2.0\Lab3.csprojAssemblyReference.cache

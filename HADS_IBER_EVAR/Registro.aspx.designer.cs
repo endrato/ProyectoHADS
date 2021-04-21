@@ -222,6 +222,15 @@ namespace HADS_IBER_EVAR
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
 
         /// <summary>
+        /// Control matriculadoLBL.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label matriculadoLBL;
+
+        /// <summary>
         /// Control cvPass.
         /// </summary>
         /// <remarks>

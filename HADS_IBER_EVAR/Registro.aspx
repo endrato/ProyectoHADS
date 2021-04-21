@@ -88,6 +88,7 @@
         </p>
         <p>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tbEmail" ErrorMessage="Introduce un email válido" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red"></asp:RegularExpressionValidator>
+            <asp:Label ID="matriculadoLBL" runat="server" Text="Introduce un email matriculado" Visible="False"></asp:Label>
         </p>
         <p>
             <asp:CompareValidator ID="cvPass" runat="server" ControlToCompare="tbPassword" ControlToValidate="tbRepPassword" ErrorMessage="Las contraseñas difieren" ForeColor="Red"></asp:CompareValidator>

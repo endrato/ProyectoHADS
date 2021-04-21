@@ -20,6 +20,8 @@
             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Profesor/Vadillo/ImportarTareasXML.aspx">ImportarXML</asp:HyperLink>
             <br />
             <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Profesor/Vadillo/ExportarTareasXML.aspx">ExportarXML</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Profesor/Vadillo/coordinador.aspx">Media tareas</asp:HyperLink>
         </div>
         <asp:ScriptManager ID="ScriptManager1" runat="server">
             </asp:ScriptManager>
